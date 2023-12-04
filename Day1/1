@@ -1,0 +1,52 @@
+# Printing , Commenting, Debugging, String Manipulation ,& Variables
+# Its really important to be Indentated
+print("Hello world!")
+
+# String concatenation
+
+print("hello" + "world")  # helloworld
+
+print("hello" + " " + "world")  # hello world
+
+# Debugging
+
+# Input
+
+input("What is your name?")
+
+print("Hello " + input(" what is your name") + "!")
+
+# Length function
+
+# len()
+
+print(len(input("What is your name ? ")))
+
+# Variable
+
+name = input("what is your name ?")
+
+name = "jack"
+print(name)
+
+name = "Angela"
+print(name)
+
+print(len(input("What is your name?")))
+
+name = input("what is your name?")
+length = len(name)
+print(length)
+
+# There are two variables, a and b from input
+a = input()
+b = input()
+# Swap
+c = a
+a = b
+b = c
+
+print("a: " + a)
+print("b: " + b)
+
+
