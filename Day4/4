@@ -1,0 +1,37 @@
+# Randomisation and python lists
+
+import random
+
+random_integer = random.randint(1, 10)
+print(random_integer)
+
+# 0.00000 - 0.99999
+random_float = random.random()
+print(random_float)
+
+# 0.00000 - 4.99999
+ran = random_float * 5
+print(ran)
+
+love_score = random.randint(1, 100)
+print(f"Your love score is {love_score}")
+
+
+# List
+
+states_of_america = ["Delaware", "Pennsylvania", "New Jersey"]
+print(states_of_america[0])
+print(states_of_america[-1])
+print(states_of_america)
+states_of_america.append("Yash")
+states_of_america.extend(["McCleveland", "jack"])
+# states_of_america.insert()
+print(len(states_of_america))
+
+# https://docs.python.org/3/
+
+fruits = ["Strawberries", "Apples", "Grapes"]
+vegetable = ["Spinach", "Kale", "Potatoes"]
+
+dirty_dozen = [fruits, vegetable]
+print(dirty_dozen)
