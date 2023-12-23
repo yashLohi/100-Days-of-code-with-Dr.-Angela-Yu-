@@ -1,0 +1,67 @@
+# Data Types, Numbers, Operations, Type Conversion, f-String
+#
+# Data types
+# String = "Hello"
+# Integer = 123456
+# Float = 1.2
+# Boolean = True Or False
+#
+# String
+#
+# "Hello"[4]
+#
+# print("123" + "456") #123456
+#
+# # Integer
+#
+# print(123 + 456)  #579
+#
+# # Float
+#
+# 3.14
+#
+# # Boolean
+#
+# True
+# False
+
+# Exercise
+
+# num_char = len(input("What is your name ?"))
+# print(type(num_char))
+# print("After changing (new_num_char = str(num_char))")
+# new_num_char = str(num_char)
+# print(type(new_num_char))
+# print("Your name has " + new_num_char + " characters.")
+
+# print(70 + float("100.5")) #170.5
+#
+# print(str(70) + str(100)) #70100
+
+# two_digit_number = 32
+# str(two_digit_number)
+#
+# first_digit = int(two_digit_number[0])
+# second_digit = int(two_digit_number[1])
+#
+# # Add the two integer together
+# two_digit_number = first_digit + second_digit
+# print(two_digit_number)
+
+# Operators + - * / **
+# PEMDAS
+# Parantheses ()
+# Exponents **
+# Multiplication *
+# Division /
+# Addition +
+# Substraction -
+
+# print(3 * 3 + 3 / 3 - 3)
+
+# print(round(8/3, 2))
+# print(8//3)
+#
+# # f-String
+# score = 0
+# print(f"your score is {score}")
