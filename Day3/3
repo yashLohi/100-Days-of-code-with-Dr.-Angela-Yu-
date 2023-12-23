@@ -1,0 +1,25 @@
+# Conditional Statements, logical Operators, Code Blocks and Scope
+
+# if condition:
+#     do this
+# else:
+#     do this
+
+# print("Welcome to the rollercoaster!")
+# height = int(input("what is your height in cm?"))
+# 
+# if height > 120:
+#     print("You can ride the roller coaster!")
+# else:
+#     print("Sorry, You have to grow taller before you can ride.")
+
+# operator    Meaning
+# >           Greater faulthandler
+# <           Less than
+# >=          Greater than or equal to
+# <=          Less than or equal to
+# ==          Equal to
+# !=          Not equal to
+
+# Nested if else
+
