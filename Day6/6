@@ -1,0 +1,34 @@
+# Functions, Code Block and While Loops
+# Karel Robot
+
+# Functions
+# print()
+# len()
+
+# User define function
+
+# def my_function():
+#     #Do this
+#     #Then do this
+#     #Finally do this
+#
+# my_function()
+
+
+# indentation
+# sky = "clear"
+# def my_function():
+# ----if sky == "clear":
+# --------print("blue")
+# ----elif sky == "cloudy":
+# --------print("grey")
+# ----print("hello")
+# print("world")
+
+
+# While loops
+
+# while something_is_true:
+    # Do this
+    # then this
+    # then this
