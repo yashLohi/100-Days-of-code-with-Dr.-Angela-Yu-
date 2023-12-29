@@ -1,0 +1,21 @@
+# Function with output
+
+def format_name(f_name, l_name):
+    formated_f_name = f_name.title()
+    formated_l_name = l_name.title()
+
+    # print(f"{formated_f_name} {formated_l_name}")
+    return f"{formated_f_name} {formated_l_name}"
+# format_name("yash", "LOHI")
+formated_string = format_name("yash", "LOHI")
+print(formated_string )
+
+def format_naem(f_name, l_name):
+    """Take a first and last name and format it in title case"""
+    if f_name == "" or l_name =="":
+        return "You didn't provide valid inputs."
+    foramted_f_name = f_name.title()
+    foramted_l_name = l_name.title()
+    return f"{foramted_f_name} {foramted_l_name}"
+
+print(format_naem(input("What is your first name?"), input("What is your last name? ")))
