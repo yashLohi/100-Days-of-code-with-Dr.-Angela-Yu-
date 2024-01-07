@@ -1,0 +1,52 @@
+from turtle import Turtle, Screen
+from random import random
+# from turtle import *
+# import turtle as t
+# import heroes
+# print(heroes.gen())
+tim = Turtle()
+tim.shape("arrow")
+tim.color("Black")
+# for _ in range(4):
+#     tim.forward(200)
+#     tim.right(90)
+
+# for _ in range(15):
+#     tim.forward(10)
+#     tim.penup()
+#     tim.forward(10)
+#     tim.pendown()
+# def draw_shape(num_sides):
+#     angle = 360 / num_sides
+#     for _ in range(num_sides):
+#         tim.forward(100)
+#         tim.right(angle)
+#
+# for shape_side_n in range(3, 11):
+#     draw_shape(shape_side_n)
+
+
+# tim.speed("fastest")
+# for steps in range(100):
+#     for c in ('blue', 'red', 'green'):
+#         tim.color(c)
+#         tim.forward(steps)
+#         tim.right(30)
+tim.speed("fastest")
+
+
+# for i in range(100):
+#     steps = int(random() * 100)
+#     angle = int(random() * 360)
+#     tim.right(angle)
+#     tim.fd(steps)
+
+
+for i in range(100):
+    tim.color("red")
+    tim.circle(100)
+    current_heading = tim.heading()
+    tim.setheading(current_heading+10)
+
+screen = Screen()
+screen.exitonclick()
