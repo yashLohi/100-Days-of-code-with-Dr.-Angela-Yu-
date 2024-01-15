@@ -1,0 +1,54 @@
+# with open("weather_data.csv.csv") as report:
+#     days = report.readlines()
+#     print(days)
+#
+# import csv
+# with open("weather_data.csv.csv") as data_file:
+#     data = csv.reader(data_file)
+#     temperatures = []
+#     for row in data:
+#         # print(row[1])
+#         if row[1] != "temp":
+#             temperatures.append(row[1])
+#     print(temperatures)
+
+import pandas
+
+
+data = pandas.read_csv("weather_data.csv.csv")
+# print(type(data))
+# print(data)
+
+# data_dict  = data.to_dict()
+# print(data_dict)
+#
+# temp_list = data["temp"].to_list()
+# print(temp_list)
+#
+# print(data["temp"].mean())
+#
+# print(data["condition"])
+# print(data.condition)
+
+# how to get data in row
+# print(data[data.day == "Monday"])
+# print(data[data.temp == data.temp.max()])
+# monday = data[data.day == "Monday"]
+# print(monday.condition)
+
+#
+# monday = data[data.day == "Monday"]
+# monday_temp = monday.temp[0]
+# monday_temp_F = monday_temp * 9/5 + 32
+# print(monday_temp_F)
+
+
+# how to create data frame from scratch
+data_dict = {
+    "students" : ["yash", "amy", "james"],
+    "scores" : [76, 56, 65]
+}
+
+data = pandas.DataFrame(data_dict)
+# data.to_csv("new_data.csv")
+print(data)
