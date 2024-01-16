@@ -1,0 +1,82 @@
+# List and Dictionary Comprehension
+
+# List Compreshension
+
+#
+#
+# numbers = [1, 2, 3]
+# new_list = []
+# for n in numbers:
+#     add_1 = n + 1
+#     new_list.append(add_1)
+#
+# # list comprehension
+# new_list = [new_item for item in list]
+# new_list = [n+1 for n in numbers]
+
+# name = "Angela"
+# new_list = [letter for letter in name]
+#
+# # python sequence
+#
+# new_list = [num * 2 for num in range(1, 5)]
+#
+# names = ["Alex", "Beth", "Caroline", "Dave", "Elanor", "Freddie"]
+#
+# # short_names = [new_item for item in list if test]
+# short_name = [name for name in names if len(name) < 5]
+# cap_name = [name.upper() for name in names if len(name) > 5]
+#
+# # Dictionary Comprehension
+#
+# new_dict = {new_key:new_value for item in list}
+# new dict = {new_key:new_value for (key, value) in dict.items() if test}
+# scores = {new_key:new_value for item in names}
+# students_scores = {student:random.randint(1, 100) for student in names}
+# passed_student = {new_key:new_value for (key, value) in dictionary.items()}
+# passed_student = {student:scores for (student, scores) in students_scores.items() if scores >= 60}
+# # print(weather_c.item())
+# weather_f =  {print(day, temp) for (day, temp) in weather_c.items()}
+
+# student_dict = {
+#     "student" : ["Angela", "James", "Lily"],
+#     "scores" : [56, 76, 98]
+# }
+
+# looping through dictionaries
+# for (key, value) in student_dict.items():
+#     print(value)
+# import pandas
+# student_data_frame = pandas.DataFrame(student_dict)
+# print(student_data_frame)
+#
+# # loop through a data frame
+# # for (key, value) in student_data_frame.items():
+# #     print(value)
+#
+# # loop through rows of a data frame
+# for (index, row) in student_data_frame.iterrows():
+#     print(index)
+#     print(row)
+#     print(row.student)
+
+
+# student_dict = {
+#     "student": ["Angela", "James", "Lily"],
+#     "score": [56, 76, 98]
+# }
+#
+# #Looping through dictionaries:
+# for (key, value) in student_dict.items():
+#     #Access key and value
+#     pass
+#
+# import pandas
+# student_data_frame = pandas.DataFrame(student_dict)
+#
+# #Loop through rows of a data frame
+# for (index, row) in student_data_frame.iterrows():
+#     #Access index and row
+#     #Access row.student or row.score
+#     pass
+
