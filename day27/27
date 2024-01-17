@@ -1,0 +1,82 @@
+# Tkinter, *args, **kwargs and Creating GUI Programs
+# pack place grid
+from tkinter import *
+import turtle
+
+window = Tk()
+window.title("My first GUI Program")
+window.minsize(width=500, height=300)
+window.config(padx=200, pady=200)
+
+# label
+
+my_label = Label(text="I am a Label", font=("Arial", 24, "italic"))
+# my_label.pack(expand=True)  # in center
+my_label.grid(column=0, row=0) # Center in top
+# my_label.pack(side="left")
+my_label["text"] = "New Text"
+my_label.config(text="New Text")
+
+# tim = turtle.Turtle()
+# tim.write()
+
+# BUtton
+
+def button_clicked():
+    print("I got clicked")
+    new_text = input.get()
+    my_label.config(text=new_text)
+
+
+button = Button(text="Click ME", command=button_clicked)
+# button.pack()
+button.place(x=1, y=1)
+button.grid(column=2, row=2)
+
+# Entry
+
+
+input = Entry(width=10)
+input.grid(column=4, row=4)
+print(input.get())
+
+window.mainloop()
+
+
+# Unlimited Arguments
+# def add(n1, n2):
+#     return n1 + n2
+
+# def add(*args):
+#     print(type(args))
+#     sum = 0
+#     for n in args:
+#         sum += n
+#
+#     return sum
+
+
+# print(add(3, 4, 5))
+
+# def calculate(n, **kwargs):
+#     # print(type(kwargs))
+#     # for key, value in kwargs.items():
+#     #     print(key)
+#     #     print(value)
+#
+#     # print(kwargs["add"])
+#     n += kwargs["add"]
+#     n *= kwargs["multiply"]
+#     print(n)
+# calculate(2, add=3, multiply=5)
+
+# class Car:
+#
+#     def __init__(self, **kw):
+#         self.make = kw["make"]
+#         self.model = kw["model"]
+#         # self.model = kw.get("model") #if not presnt return none
+#         self.colour = kw.get("color")
+#         self.seats = kw.get("seats")
+# my_car = Car(make="Nissan", model="GT-8")
+# print(my_car.model)
